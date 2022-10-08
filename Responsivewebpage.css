@@ -1,0 +1,123 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "gilroy";
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    
+}
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+}
+#left{
+    width: 45%;
+    height: 100%;
+    position: relative;
+    /* background-color: aquamarine; */
+}
+#right{
+    width: 60%;
+    height: 100%;
+    background-color: rgb(81, 177, 145);
+}
+#righttop{
+    width: 100%;
+    height: 50%;
+    background-color: royalblue;
+    display: flex;
+}
+#rightbottom{
+    width: 100%;
+    height: 50%;
+    /* background-color: rgb(47, 60, 100); */
+    background-image: url(https://images.unsplash.com/photo-1619241638225-14d56e47ae64?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80);
+    background-position: center;
+   background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#righttopleft{
+    width: 55%;
+    height: 100%;
+    /* background-color: azure; */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(https://images.unsplash.com/photo-1557800636-894a64c1696f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80);
+}
+
+#righttopright{
+    width: 55%;
+    height: 100%;
+    /* background-color: rgb(26, 70, 70); */
+    background-image: url(https://images.unsplash.com/photo-1586788224331-947f68671cf1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#lnav{
+    width: 100%;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#lnavr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#lnavr a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+#lnavr i{
+    color: royalblue;
+}
+#textcenter{
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%,-50%); 
+   position: absolute;
+}
+
+#textcenter h1{
+    font-size: 90px;
+    font-weight: 900;
+}
+#textcenter p{
+    opacity: 0.6;
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 15px;
+    line-height: 25px;
+}
+#textcenter a{
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    font-size: 13px;
+    font-weight: 900;
+    opacity: 0.8;
+    line-height: 50px;
+}
+@media (max-width: 500px) {
+    #main{
+        flex-direction: column;
+    }
+    #main #left{
+        width: 100%;
+    }
+    #main #right{
+        width: 100%;
+    }
+}
